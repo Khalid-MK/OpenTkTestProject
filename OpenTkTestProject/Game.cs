@@ -44,7 +44,7 @@ namespace OpenTkTestProject
             // Install SixLabors.ImageSharp
 
             //Load the image
-            Image<Rgba32> image = Image.Load<Rgba32>(@"C:\Users\Khalid\Desktop\Test\wall.jpg");
+            Image<Rgba32> image = Image.Load<Rgba32>(@"C:\Users\PROG5\Desktop\Images\1.jpeg");
 
             //ImageSharp loads from the top-left pixel, whereas OpenGL loads from the bottom-left, causing the texture to be flipped vertically.
             //This will correct that, making the texture display properly.
@@ -70,18 +70,18 @@ namespace OpenTkTestProject
 
             #region Load Image Using Bitmap
 
-            Bitmap bitmap = new Bitmap(@"C:\Users\Khalid\Desktop\Test\wall.jpg");
-            Rectangle rectangle = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
-            BitmapData bitmapdata = bitmap.LockBits(rectangle, ImageLockMode.ReadOnly,
-                System.Drawing.Imaging.PixelFormat.Format24bppRgb);
-            bitmap.UnlockBits(bitmapdata);
+            //Bitmap bitmap = new Bitmap(@"C:\Users\Khalid\Desktop\Test\wall.jpg");
+            //Rectangle rectangle = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
+            //BitmapData bitmapdata = bitmap.LockBits(rectangle, ImageLockMode.ReadOnly,
+            //    System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+            //bitmap.UnlockBits(bitmapdata);
 
             #endregion
 
             #region Applying textures
 
             GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, image.Width, image.Height, 0, PixelFormat.Rgba, PixelType.UnsignedByte, pixels.ToArray());
-            
+
             GL.GenerateMipmap(GenerateMipmapTarget.Texture2D);
 
             //float[] vertices =
