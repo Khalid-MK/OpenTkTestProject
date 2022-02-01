@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTkTestProject", "OpenTkTestProject\OpenTkTestProject.csproj", "{1EA232E2-FC7E-4011-B334-0F8DD0ED7A6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGlViewer", "OpenGlViewer\OpenGlViewer.csproj", "{F6256D81-9868-4554-ACA1-5F9B892641E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenGlViewer", "OpenGlViewer\OpenGlViewer.csproj", "{F6256D81-9868-4554-ACA1-5F9B892641E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenglGame", "OpenglGame\OpenglGame.csproj", "{23BFE9E6-467F-474C-BB77-F7D80905C618}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F6256D81-9868-4554-ACA1-5F9B892641E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6256D81-9868-4554-ACA1-5F9B892641E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6256D81-9868-4554-ACA1-5F9B892641E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23BFE9E6-467F-474C-BB77-F7D80905C618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23BFE9E6-467F-474C-BB77-F7D80905C618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23BFE9E6-467F-474C-BB77-F7D80905C618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23BFE9E6-467F-474C-BB77-F7D80905C618}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

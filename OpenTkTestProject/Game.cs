@@ -38,7 +38,7 @@ namespace OpenTkTestProject
 
         protected override void OnLoad()
         {
-            GL.ClearColor(Color.AliceBlue);
+            GL.ClearColor(Color.Black);
 
             #region Load Image
             // Install SixLabors.ImageSharp

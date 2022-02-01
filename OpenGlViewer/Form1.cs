@@ -125,8 +125,6 @@ namespace OpenGlViewer
 
 
 
-
-
             GL.ClearColor(Color4.MidnightBlue);
             GL.Enable(EnableCap.DepthTest);
 
